@@ -11,4 +11,14 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+
+    // Tambahkan konfigurasi ini untuk suppress warning
+    css: {
+        preprocessorOptions: {
+            scss: {
+                silenceDeprecations: ['legacy-js-api', 'color-functions', 'import']
+            }
+        }
+    }
 });
+
